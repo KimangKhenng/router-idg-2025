@@ -66,15 +66,19 @@
                         class="hover:cursor-pointer bg-blue-500 rounded-3xl px-3 py-2 text-white hover:bg-blue-300">
                         English</div>
                     <div class="sm:flex sm:gap-4">
-                        <a class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
-                            href="#">
+                        <button type="button"
+                            class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
+                            aria-haspopup="dialog" aria-expanded="false" aria-controls="login-modal"
+                            data-hs-overlay="#login-modal">
                             Login
-                        </a>
+                        </button>
 
-                        <a class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block"
-                            href="#">
+                        <button type="button"
+                            class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block"
+                            aria-haspopup="dialog" aria-expanded="false" aria-controls="register-modal"
+                            data-hs-overlay="#register-modal">
                             Register
-                        </a>
+                        </button>
                     </div>
 
                     <button

@@ -7,7 +7,7 @@
         <div v-else-if="error" class="text-center text-red-600">Error: {{ error }}</div>
 
         <div v-else class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            <div v-for="user in users" :key="user.id"
+            <!-- <div v-for="user in users" :key="user.id"
                 class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
                 <div class="flex items-center space-x-4 mb-4">
                     <img :src="generateAvatarUrl(user.name)" :alt="user.name"
@@ -25,16 +25,21 @@
                         {{ formatSalary(user.salary) }}
                     </p>
                 </div>
-            </div>
+            </div> -->
+            <UserComponent v-for="user in users" :key="user.id" :user="user" />
         </div>
     </div>
 </template>
 
 <script>
 import axios from 'axios'
+import UserComponent from '@/components/users/UserComponent.vue'
 
 export default {
     name: 'UserList',
+    components: {
+        UserComponent
+    },
     data() {
         return {
             users: [],
@@ -55,14 +60,6 @@ export default {
                 this.loading = false
             }
         },
-        generateAvatarUrl(name) {
-            const encodedName = encodeURIComponent(name)
-            return `https://api.dicebear.com/7.x/fun-emoji/svg?seed=${encodedName}`
-        },
-        formatSalary(salary) {
-            if (!salary || isNaN(salary)) return 'N/A'
-            return `$${parseFloat(salary).toLocaleString()}`
-        }
     },
     mounted() {
         this.fetchUsers()
