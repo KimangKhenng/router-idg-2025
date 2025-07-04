@@ -32,8 +32,16 @@
                         </li>
 
                         <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> {{ $t('services') }}
-                            </a>
+                            <router-link class="text-gray-500 transition hover:text-gray-500/75" to="/services"> {{
+                                $t('services') }}
+                            </router-link>
+                        </li>
+
+
+                        <li>
+                            <router-link class="text-gray-500 transition hover:text-gray-500/75" to="/files"> {{
+                                $t('files') }}
+                            </router-link>
                         </li>
 
                         <li>

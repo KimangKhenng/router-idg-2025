@@ -26,6 +26,7 @@ const i18n = createI18n({
             services: 'Services',
             projects: 'Projects',
             setting: 'Setting',
+            files: 'Files',
             productTitle: 'Welcome to our project',
         },
         khm: {
@@ -36,6 +37,7 @@ const i18n = createI18n({
             services: 'សេវាកម្ម',
             projects: 'គម្រោង',
             setting: 'ការកំណត់',
+            files: 'ឯកសារ',
             productTitle: 'សូមស្វាគមន៍មកកាន់គម្រោងរបស់យើង',
         }
     }
