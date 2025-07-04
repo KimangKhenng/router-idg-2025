@@ -9,7 +9,7 @@
         </div>
 
         <ul v-else class="divide-y divide-gray-200">
-            <li v-for="file in files" :key="file" class="py-3 flex justify-between items-center">
+            <li v-for="file in files" :key="file" class="py-3  justify-between items-center">
                 <span class="text-sm text-gray-800">{{ file }}</span>
                 <a :href="fileUrl(file)" target="_blank"
                     class="text-indigo-600 hover:text-indigo-800 text-sm font-medium">

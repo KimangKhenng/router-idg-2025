@@ -1,52 +1,34 @@
 import './assets/main.css'
 
 import { createApp } from 'vue'
+import PrimeVue from 'primevue/config';
+import ToastService from 'primevue/toastservice';
 import App from './App.vue'
 import router from './routes.js'
+import i18n from './i18n'
 
-import { createI18n } from 'vue-i18n'
+import $ from "jquery";
+import _ from "lodash";
+import noUiSlider from "nouislider";
+import "datatables.net";
+import "dropzone/dist/dropzone-min.js";
+import * as VanillaCalendarPro from "vanilla-calendar-pro";
 
-/**
- * About
-Register
-User
-Services
-Projects
-Setting
- */
-const i18n = createI18n({
-    locale: 'en',
-    fallbackLocale: 'khm',
-    messages: {
-        en: {
-            hello: 'hello world',
-            about: 'About',
-            register: 'Register',
-            user: 'User',
-            services: 'Services',
-            projects: 'Projects',
-            setting: 'Setting',
-            files: 'Files',
-            productTitle: 'Welcome to our project',
-        },
-        khm: {
-            hello: 'សួស្តី​ពិភពលោក',
-            about: 'អំពីយើង',
-            register: 'ចុះឈ្មោះ',
-            user: 'អ្នកប្រើប្រាស់',
-            services: 'សេវាកម្ម',
-            projects: 'គម្រោង',
-            setting: 'ការកំណត់',
-            files: 'ឯកសារ',
-            productTitle: 'សូមស្វាគមន៍មកកាន់គម្រោងរបស់យើង',
-        }
-    }
-}
-)
+window._ = _;
+window.$ = $;
+window.jQuery = $;
+window.DataTable = $.fn.dataTable;
+window.noUiSlider = noUiSlider;
+window.VanillaCalendarPro = VanillaCalendarPro;
+
+
 
 const app = createApp(App)
 app.use(router)
 app.use(i18n)
+app.use(PrimeVue);
+app.use(ToastService);
 
+app.mount('#app');
 
-app.mount('#app')
+import("preline/dist/index.js");
