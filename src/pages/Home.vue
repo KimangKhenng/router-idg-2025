@@ -1,17 +1,17 @@
 <template>
+    <Insight />
     <HeroBanner />
-    <Avatar title="Avatar Title" description="Avatar Description" />
     <BannerLeft />
 </template>
 <script>
 import HeroBanner from '@/components/HeroBanner.vue'
 import BannerLeft from '@/components/BannerLeft.vue'
-import Avatar from '@/components/Avatar.vue'
+import Insight from '@/components/Insight.vue';
 export default {
     components: {
         HeroBanner,
         BannerLeft,
-        Avatar
+        Insight
     }
 }
 </script>
