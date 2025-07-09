@@ -32,7 +32,7 @@ export default {
         async fetchUsers() {
             try {
                 const response = await axios.get(
-                    'https://68648e915b5d8d03397d8138.mockapi.io/api/v1/users'
+                    `${import.meta.env.VITE_USERS_API}/api/v1/users`,
                 )
                 this.users = response.data
             } catch (err) {

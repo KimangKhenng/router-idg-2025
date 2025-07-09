@@ -74,7 +74,7 @@ export default {
             console.log('Form submitted:', this.form)
             // You can add validation or API calls here
             try {
-                const response = await axios.post('https://68648e915b5d8d03397d8138.mockapi.io/api/v1/users', {
+                const response = await axios.post(`${import.meta.env.VITE_USERS_API}/api/v1/users`, {
                     name: this.form.name,
                     email: this.form.email,
                     age: this.form.age

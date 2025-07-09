@@ -4,7 +4,7 @@
             <div class="mx-auto max-w-prose text-center">
                 <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl">
                     Understand user flow and
-                    <strong class="text-indigo-600"> increase </strong>
+                    <strong class="text-indigo-600"> {{ appMode }} </strong>
                     conversions
                 </h1>
 
@@ -28,3 +28,12 @@
         </div>
     </section>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            appMode: import.meta.env.VITE_APP_MODE
+        }
+    }
+}
+</script>
