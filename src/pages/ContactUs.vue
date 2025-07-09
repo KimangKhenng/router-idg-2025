@@ -13,7 +13,8 @@
 
             <div class="mt-12">
                 <!-- Form -->
-                <form name="contact" netlify method="POST">
+                <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="ask-question" />
                     <div class="grid gap-4 lg:gap-6">
                         <!-- Grid -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
