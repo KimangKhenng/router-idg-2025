@@ -49,6 +49,13 @@
                                 {{ $t('projects') }}
                             </router-link>
                         </li>
+                    
+
+                        <li>
+                            <router-link class="text-gray-500 transition hover:text-gray-500/75" to="/contact-us">
+                                {{ $t('contact') }}
+                            </router-link>
+                        </li>
 
                         <li>
                             <router-link class="text-gray-500 transition hover:text-gray-500/75" to="/setting">

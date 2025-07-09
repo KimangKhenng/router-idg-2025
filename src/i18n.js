@@ -14,6 +14,7 @@ const i18n = createI18n({
             setting: 'Setting',
             files: 'Files',
             productTitle: 'Welcome to our project',
+            contact: 'Contact Us',
         },
         khm: {
             hello: 'សួស្តី​ពិភពលោក',
@@ -25,6 +26,7 @@ const i18n = createI18n({
             setting: 'ការកំណត់',
             files: 'ឯកសារ',
             productTitle: 'សូមស្វាគមន៍មកកាន់គម្រោងរបស់យើង',
+            contact: 'ទំនាក់ទំនង',
         }
     }
 }

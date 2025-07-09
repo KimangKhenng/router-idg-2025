@@ -9,9 +9,10 @@ import PricingList from '@/components/PricingList.vue'
 import Project from '@/pages/Project.vue'
 import ProjectPage from '@/pages/ProjectPage.vue'
 import Registration from './pages/Registration.vue'
-import User from './pages/User.vue'
-import Upload from './pages/Upload.vue'
-import FileView from './pages/FileView.vue'
+import User from '@/pages/User.vue'
+import Upload from '@/pages/Upload.vue'
+import FileView from '@/pages/FileView.vue'
+import ContactUs from '@/pages/ContactUs.vue'
 
 const routes = [
     { path: '/', component: Home },
@@ -27,6 +28,7 @@ const routes = [
     { path: '/project', component: Project },
     { path: '/services', component: Upload },
     { path: '/files', component: FileView },
+    { path: '/contact-us', component: ContactUs },
     { path: '/project/:name', name: 'ProjectDetail', component: ProjectPage, props: true },
     { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
 ]
