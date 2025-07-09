@@ -13,7 +13,7 @@
 
             <div class="mt-12">
                 <!-- Form -->
-                <form name="contact" netlify>
+                <form name="contact" netlify method="POST">
                     <div class="grid gap-4 lg:gap-6">
                         <!-- Grid -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
